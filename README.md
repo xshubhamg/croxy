@@ -11,7 +11,7 @@ Croxy starts a local HTTP server on a port you choose. Every request received by
 For example, if Croxy is started with this command:
 
 ```sh
-caching-proxy --port 3000 --origin http://dummyjson.com
+croxy --port 3000 --origin http://dummyjson.com
 ```
 
 Then this local request:
@@ -135,7 +135,7 @@ X-Cache: HIT
 
 ## Using The CLI Command
 
-The package defines a binary named `caching-proxy` in `package.json`.
+The package defines a binary named `croxy` in `package.json`.
 
 In a local development environment, you can run it through Bun:
 
@@ -146,7 +146,7 @@ bun src/index.ts --port 3000 --origin http://dummyjson.com
 If the package is linked or installed as a command, use:
 
 ```sh
-caching-proxy --port 3000 --origin http://dummyjson.com
+croxy --port 3000 --origin http://dummyjson.com
 ```
 
 ## Clearing The Cache
@@ -160,7 +160,7 @@ bun src/index.ts --clear-cache
 Or, when using the linked or installed CLI command:
 
 ```sh
-caching-proxy --clear-cache
+croxy --clear-cache
 ```
 
 This removes the `.croxy-cache` directory from the current working directory.
@@ -170,19 +170,19 @@ This removes the `.croxy-cache` directory from the current working directory.
 Start the proxy:
 
 ```sh
-caching-proxy --port <number> --origin <url>
+croxy --port <number> --origin <url>
 ```
 
 Clear the cache:
 
 ```sh
-caching-proxy --clear-cache
+croxy --clear-cache
 ```
 
 Show help:
 
 ```sh
-caching-proxy --help
+croxy --help
 ```
 
 ## Project Structure

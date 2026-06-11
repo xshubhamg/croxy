@@ -57,8 +57,8 @@ function valueAfter(args: string[], flag: string): string | undefined {
 
 function printHelp() {
   console.log(`Usage:
-  caching-proxy --port <number> --origin <url>
-  caching-proxy --clear-cache`);
+  croxy --port <number> --origin <url>
+  croxy --clear-cache`);
 }
 
 function exitWithUsage(message: string): never {

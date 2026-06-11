@@ -4,7 +4,7 @@
   "description": "A Bun + TypeScript + Express caching proxy CLI.",
   "type": "module",
   "bin": {
-    "caching-proxy": "./src/index.ts"
+    "croxy": "./src/index.ts"
   },
   "scripts": {
     "start": "bun src/index.ts",
